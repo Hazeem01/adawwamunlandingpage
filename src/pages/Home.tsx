@@ -1,16 +1,27 @@
 // src/pages/Home.tsx
-import React from "react";
 import MainLayout from "../layout/MainLayout";
+import Hero from "../components/Hero";
+import Legacy from "../components/Legacy";
+import Mudee from "../components/Mudee";
+import GlobalImpact from "../components/GlobalImpact";
+import ScholarSection from "../components/ScholarSection";
+import Courses from "../components/Courses";
+import Testimonials from "../components/Testimonials";
+import CallToAction from "../components/CallToAction";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <MainLayout>
-      <section className="p-6 text-center">
-        <h1 className="text-3xl font-bold mb-4">Hello World</h1>
-        <p className="text-gray-300">
-          Welcome to Ad-dawaamun. Preserving Knowledge and Nurturing Imaan.
-        </p>
-      </section>
+      <Hero />
+      <Legacy />
+      <Mudee />
+      <GlobalImpact />
+      <ScholarSection />
+      <Courses />
+      <Testimonials />
+      <CallToAction />
+      <Footer />
     </MainLayout>
   );
 };
